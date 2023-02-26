@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#517B9C"
+    android:background="#252420"
     android:layout_height="match_parent"
     tools:context=".MessageActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:id="@+id/linear_layout"
-        android:background="@color/teal_200"
+        android:background="#FF274714"
         android:layout_height="wrap_content">
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="30dp"
