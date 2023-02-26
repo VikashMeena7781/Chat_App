@@ -49,7 +49,6 @@ public class Dashboard extends AppCompatActivity {
         final TabLayout tabLayout = findViewById(R.id.tab_layout);
         final ViewPager viewPager = findViewById(R.id.view_pager);
 
-
         auth=FirebaseAuth.getInstance();
         user= auth.getCurrentUser();
         reference=FirebaseDatabase.getInstance().getReference("Users_Data").child(user.getUid());
@@ -77,6 +76,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+
                 int unread=0;
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Chat chat = dataSnapshot.getValue(Chat.class);
