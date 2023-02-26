@@ -37,7 +37,7 @@ public class Dashboard extends AppCompatActivity {
     FirebaseUser user;
     FirebaseAuth auth;
     DatabaseReference reference;
-    CircleImageView profile_image;
+    TextView profile_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
