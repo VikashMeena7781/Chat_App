@@ -7,22 +7,22 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:id="@+id/profile_image"
-        android:src="@mipmap/ic_launcher_round"/>
+       />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_toRightOf="@id/profile_image"
         android:background="@drawable/background_left"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="#274714"
         android:id="@+id/relative_layout"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/show_message"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="@color/teal_700"
+            android:backgroundTint="#274714"
             android:text="hello"
             android:padding="8dp"
             android:background="@drawable/background_left"
@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:text="4:48"
             android:textSize="18sp"
+            android:textColor="@color/white"
             android:id="@+id/last_time_msg"
             android:layout_toRightOf="@id/show_message"
             android:layout_marginTop="20dp"
